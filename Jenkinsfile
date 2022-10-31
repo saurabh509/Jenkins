@@ -3,7 +3,7 @@ pipeline {
          stages {
                  stage('Clone') {
                  steps {
-		    git branch: "main",url: "https://github.com/saurabh509/Jenkins.git", credentialsId: "d04ccce0-cb33-4aca-9bc2-d12c4f3a2d5e	"
+		    git branch: "*/main",url: "https://github.com/saurabh509/Jenkins.git", credentialsId: "d04ccce0-cb33-4aca-9bc2-d12c4f3a2d5e	"
 		    sh 'ls -lrt'
                  }
                  }

@@ -2,14 +2,9 @@ pipeline {
          agent any
          stages {
                  stage('Clone') {
-                 environment {
-			  MY_FILES = sh(script: 'cd mydir && ls -l', returnStdout: true)
-			}
-			steps {
-			  sh '''
-			    echo "$MY_FILES"
-			  '''
-			}
+                 steps {
+                    echo('Sample testing of Stage 1')
+                 }
                  }
                  stage('Build') {
                  steps {
